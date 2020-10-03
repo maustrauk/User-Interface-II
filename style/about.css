@@ -24,7 +24,7 @@ vertical-align: baseline;
 
 /*Main styles*/
 
-body {
+.container {
     background: cornsilk;
 }
 
@@ -86,7 +86,7 @@ header nav a:hover {
     to {background-color: black;}
   }
 
-.intro {
+header .intro {
     width: 50%;
     padding-bottom: 10%;
     font-family: "Comic Sans MS", cursive, sans-serif;
@@ -97,21 +97,6 @@ header nav a:hover {
     background-position: center;
     background-size: cover;
     color: green;
-}
-
-.about_main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-.img {
-    width: 30%;
-    text-align: center;
-    padding-bottom: 1em;
 }
 
 footer {
