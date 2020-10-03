@@ -24,13 +24,25 @@ vertical-align: baseline;
 
 /*Main styles*/
 
-body {
+.container {
     background: floralwhite;
 }
 
 h1, h2 {
     text-align: center;
     font-weight: bold;
+}
+
+h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 2em;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
 }
 
 header {
@@ -49,18 +61,6 @@ nav {
     margin-bottom: 0.6em;
 }
 
-
-h1 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: 2em;
-    margin-bottom: 0.2em;
-}
-
-h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5em;
-    margin-bottom: 0.2em;
-}
 
 
 header nav a, button {
@@ -86,19 +86,19 @@ header nav a:hover {
     to {background-color: black;}
   }
 
-.intro {
+header .text-container {
     width: 75%;
     font-family: "Comic Sans MS", cursive, sans-serif;
     text-align: center;
     margin-bottom: 1em;
 }
 
-.main_img img {
+.top-content .img-container img {
     display: block;
     width: 100%;
 }
 
-.gallary {
+.middle-content .gallary {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -107,16 +107,16 @@ header nav a:hover {
     margin-bottom: 0.5em;
 }
 
-.img {
+.middle-content .gallary .img-container {
     width: 20%;
 }
 
-.img img {
+.middle-content .gallary .img-container img {
     display: block;
     width: 100%;
 }
 
-#gallary_text  {
+.middle-content .gallary .text-container  {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -125,7 +125,7 @@ header nav a:hover {
     background: floralwhite;
 }
 
-#gallary_text p {
+.middle-content .gallary .text-container p {
     text-align: justify;
     font-family: "Lucida Console", Monaco, monospace;
 }
