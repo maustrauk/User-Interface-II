@@ -22,15 +22,53 @@ font: inherit;
 vertical-align: baseline;  
 }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
 /*Main styles*/
 
 .container {
     background: crimson;
-}
-
-h1, h2 {
-    text-align: center;
-    font-weight: bold;
 }
 
 header {
@@ -99,6 +137,78 @@ header .intro {
     color: green;
 }
 
+
+/*top content elements styles*/
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content .text-container {
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+/*middle content elements styles*/
+
+.middle-content {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.middle-content .text-container img {
+    display: block;
+    width: 100%;
+} 
+
+.middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
+.middle-content .text-container {
+    border-bottom: 1px dashed black;
+    width: 45%;
+    padding-bottom: 3em;
+    padding-top: 3em;
+}
+
+.middle-content .text-container h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 0;
+}
+
+.middle-content .text-container button {
+    font-size: 110%;
+    margin-top: 1em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border: 2px solid black;
+    border-radius: 0.5em;
+}
+
+/*bottom content elements styles*/
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+}
+
+.bottom-content .text-container {
+    padding-right: 4%;
+}
+
+.bottom-content .text-container:last-child {
+    padding-right: 0;
+}
 
 footer {
     background: coral;
