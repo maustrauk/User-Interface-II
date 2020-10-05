@@ -1,0 +1,130 @@
+/* Add CSS styling here */
+
+/* CSS reset*/
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+/*Main styles*/
+
+.container {
+    background: rgba(241, 255, 240, 0.781);
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    
+}
+
+nav {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 0.6em;
+}
+
+
+h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 2em;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+
+header nav a, button {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 1.25em;
+    text-decoration: none;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border: 1px solid #00008B;
+    background:  #00008B;
+    color: blanchedalmond;
+    text-align: center;
+
+}
+
+header nav a:hover {
+    background:white;
+    color:red;
+    animation: nav_animation1 3s infinite;
+  }
+
+@keyframes nav_animation1 {
+    from {background-color: white;}
+    to {background-color: black;}
+  }
+
+header .intro {
+    width: 50%;
+    padding-bottom: 10%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1em;
+    background-image: url("/assets/contact_img.jpg");
+    background-position: center;
+    background-size: cover;
+    color: green;
+}
+
+footer {
+    background: coral;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+footer button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer button:hover {
+    background:white;
+    color:black;
+    animation: contact_me 3s infinite;
+}
+
+@keyframes contact_me {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
