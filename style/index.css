@@ -22,6 +22,16 @@ font: inherit;
 vertical-align: baseline;  
 }
 
+* {
+    box-sizing: border-box;
+    max-width: 100%; /*you can never be bigger thaan parrent*/
+}
+
+/*general styles*/
+html {
+    font-size: 62.5%; /* 1 rem = 10px*/
+}
+
 /*Main styles*/
 
 .container {
@@ -35,13 +45,17 @@ h1, h2 {
 
 h1 {
     font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: 200%;
+    font-size: 400%;
     margin-bottom: 1%;
+}
+
+p {
+    font-size: 150%;
 }
 
 .subtitle {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 175%;
+    font-size: 350%;
     margin-bottom: 0.5%;
 }
 
@@ -65,7 +79,7 @@ nav {
 
 header nav a, button {
     font-family: "Lucida Console", Monaco, monospace;
-    font-size: 1.25em;
+    font-size: 2em;
     text-decoration: none;
     padding: 0.5em 0.5em 0.5em 0.5em;
     border: 1px solid #00008B;
@@ -91,6 +105,8 @@ header .text-container {
     font-family: "Comic Sans MS", cursive, sans-serif;
     text-align: center;
     margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .top-content .img-container img {
@@ -164,9 +180,12 @@ footer button:hover {
 
   /*Media queries*/
 
-  @media (max-width: 500px) {
-
-}
+  @media (max-width: 1245px) {
+    .middle-content .gallary .text-container {
+        font-size: 80%;
+        width: 20%;
+    }
+  }
 
   @media (max-width: 800px) {
       header nav {
@@ -187,6 +206,7 @@ footer button:hover {
 
       .middle-content .gallary {
           justify-content: space-around;
+          margin-bottom: 5%;
       }
 
       .middle-content .gallary .img-container {
@@ -195,10 +215,27 @@ footer button:hover {
       }
 
       .middle-content .gallary .text-container {
+          margin-top: 5%;
           width:80%;
+          font-size: 100%;
       }
+
+      .middle-content .gallary .text-container p {
+        text-align: center;
+    }
 
       footer nav {
           margin-top: 5%;
       }
+}
+
+@media (max-width: 500px) {
+    
+    .container {
+        font-size: 80%;
+    }
+
+    .middle-content .gallary {
+        flex-direction: column;
+    }
 }
